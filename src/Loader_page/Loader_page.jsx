@@ -12,4 +12,4 @@ function Loader_page() {
   )
 }
 
-export default Loader_page
+export default Loader_page;
