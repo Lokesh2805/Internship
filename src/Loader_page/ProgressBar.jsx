@@ -20,7 +20,7 @@ const ProgressBar = () => {
   }, [percentage]);
 
   return (
-    <div className='fixed bottom-5 left-0 right-0' style={{overflow:'hidden'}}>
+    <div className=' fixed bottom-5 left-0 right-0' style={{overflow:'hidden'}}>
   <div  className='text-white text-[40px] flex justify-end font-[-apple-system]'>
     {percentage}%
   </div>

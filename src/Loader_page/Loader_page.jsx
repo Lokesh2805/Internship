@@ -4,7 +4,7 @@ import ProgressBar from './ProgressBar';
 
 function Loader_page() {
   return (
-    <div>
+    <div >
     <TypedText />
     <ProgressBar />
     
