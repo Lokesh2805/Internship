@@ -61,11 +61,10 @@ import BlobAnimation from './BlobAnimation';
         </div>
 
         <div>
-
         </div>
     </div>
     <div className='pr-6 flex justify-end mx-auto item-center'>
-    <a href="#" class="bg-[#fff] text-lg text-[#000] px-[20px] py-[10px] rounded-[10px] font-[-apple-system] cursor-pointer [transition:background-color_0.3s,_color_0.3s] hover: hover:bg-[#fff] hover:text-[#000] hover:rounded-[10px] hover:rounded-[5%]">Chat Bot</a>
+    <a href="#" class="bg-[#fff] text-lg text-[#000] px-[20px] py-[10px] rounded-[10px] font-[-apple-system] cursor-pointer [transition:background-color_0.3s,_color_0.3s] hover: hover:bg-[#fff] hover:text-[#000] hover:rounded-[10px]">Chat Bot</a>
     </div>
     </div>
   )
