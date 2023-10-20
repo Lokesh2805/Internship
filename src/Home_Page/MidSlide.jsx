@@ -1,12 +1,11 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import CanvasAnimation from './BlobAnimation';
-
+import BlobAnimation from './BlobAnimation';
     const MidSlide = () => {
-        const textToDisplay = ["Software","Mobile App"];
-        const typingSpeed = 500; 
-        const eraseSpeed = 100;  
-        const delay = 10000; 
+        const textToDisplay = ["Software","Mobile App","Website","Blockchain","Wearable"];
+        const typingSpeed = 180; 
+        const eraseSpeed = 50;  
+        const delay = 2000; 
       
         const [displayText, setDisplayText] = useState('');
         const [isTyping, setIsTyping] = useState(true);
@@ -52,16 +51,21 @@ import CanvasAnimation from './BlobAnimation';
   return (
     <div>
     <div className='flex'>
-        <div className='text-white'>
-        
-        </div>
+        <div className='text-white p-8 text-[74px]'>
         <div>
-           
+        Multi-
+        </div>
+        Disciplinary 
+        <div className='fixed text-orange-600'>{displayText}</div>
+        <div className='pt-[6.8rem]'>Developers.</div>
+        </div>
+
+        <div>
+
         </div>
     </div>
-    <div className='pr-8 flex justify-end mx-auto items-center'>
-    <a href="#" class="bg-[#fff] text-lg text-[#000] px-[20px] py-[10px] rounded-[10%] font-[-apple-system] cursor-pointer [transition:background-color_0.3s,_color_0.3s] hover: hover:bg-[#fff] hover:text-[#000] hover:rounded-[5%]">Chat Bot</a>
-
+    <div className='pr-6 flex justify-end mx-auto item-center'>
+    <a href="#" class="bg-[#fff] text-lg text-[#000] px-[20px] py-[10px] rounded-[10px] font-[-apple-system] cursor-pointer [transition:background-color_0.3s,_color_0.3s] hover: hover:bg-[#fff] hover:text-[#000] hover:rounded-[10px] hover:rounded-[5%]">Chat Bot</a>
     </div>
     </div>
   )

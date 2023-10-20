@@ -26,7 +26,9 @@ const Home = () => {
     <div id='curtain' className='fixed top-0 left-0 w-full h-screen bg-black z-10 animate-curtain'>
     <Header />
     <MidSlide />
+   
     <Footer />
+   
     </div>
     
   )
