@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Header from './Header';
 const images = [
     'https://thumbs.dreamstime.com/b/coca-cola-can-red-background-moscow-russia-march-174345795.jpg',
@@ -13,6 +14,9 @@ const images = [
   ];
   
 function Project() {
+  const location = useLocation();
+  const bodyBackgroundColor = location.pathname === '/project' ? 'bg-white' : 'bg-1C1C1C';
+  document.body.className = `bg ${bodyBackgroundColor}`;
     const navigate = useNavigate();
 
   useEffect(() => {
@@ -27,12 +31,13 @@ function Project() {
     <div><Header /></div>
    
     <div className='flex items-center justify-center gap-20 whitespace-nowrap '>
+    <div className='w-1/2'></div>
     {images.map((image, index) => (
       <div key={index} className="relative">
         <img
           src={image}
           alt={`Image ${index + 1}`}
-          className="relative inline-block mx-4 overflow-hidden h-[25.48rem] w-[19.76rem] opacity-100 object-cover mt-[7rem] animate-[movebounce_5s_linear_infinite] rounded-lg filter grayscale hover:filter-none transition-transform duration-300"
+          className="relative inline-block mx-4  h-[25.48rem] w-[19.76rem] opacity-100 object-cover mt-[7rem] animate-[movebounce_5s_linear_infinite] rounded-lg filter grayscale hover:filter-none transition-transform duration-300"
         />
         </div>
     ))}
