@@ -67,11 +67,9 @@ const BlobAnimation = () => {
 
   return (
     <div className="overflow-hidden touch-action-none content-zooming-none user-select-none">
-      <div className="absolute bg-black w-full h-full">
+      <div className="absolute bg-white w-full h-full">
         <canvas
-          className="absolute top-0 left-0 w-full h-full bg-black"
-          
-        />
+          className="absolute top-0 left-0 w-full h-full bg-black" />
       </div>
     </div>
   );

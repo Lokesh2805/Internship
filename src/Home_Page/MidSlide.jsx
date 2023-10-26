@@ -5,7 +5,7 @@ import BlobAnimation from './BlobAnimation';
         const textToDisplay = ["Software","Mobile App","Website","Blockchain","Wearable"];
         const typingSpeed = 180; 
         const eraseSpeed = 50;  
-        const delay = 2000; 
+        const delay = 1000; 
       
         const [displayText, setDisplayText] = useState('');
         const [isTyping, setIsTyping] = useState(true);
@@ -51,7 +51,7 @@ import BlobAnimation from './BlobAnimation';
   return (
     <div>
     <div className='flex'>
-        <div className='text-white p-8 text-[74px]'>
+        <div className='text-white p-8 text-[74px] font-[Poppins]'>
         <div>
         Multi-
         </div>
@@ -70,4 +70,4 @@ import BlobAnimation from './BlobAnimation';
   )
 }
 
-export default MidSlide
+export default MidSlide;

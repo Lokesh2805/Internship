@@ -52,7 +52,7 @@ const TypedText = () => {
     
   return (
     <div>
-    <div className="text-white text-[30px] w-[300px] h-[300px] mx-[auto] my-[10%] relative text-[#fff] flex justify-center items-center
+    <div className="text-white text-[30px] w-[300px] h-[300px] mx-[auto] my-[10%] relative flex justify-center items-center
     before:border-[2px] before:border-[solid] before:border-[#fff] before:rounded-[58%_42%_48%_53%_/_47%_60%_36%_53%] before:w-full before:h-full before:content-[''] before:absolute before:left-[0] before:top-[0] before:animate-[rotate_16s_linear_infinite]
     after:border-[2px] after:border-[solid] after:border-[#fff] after:rounded-[48%_42%_48%_53%_/_47%_60%_36%_53%] after:w-full after:h-full after:bg-[rgba(244,_166,_166,_0.1)] after:content-[''] after:absolute after:left-[0] after:top-[0] after:animate-[rotate_6s_linear_infinite]"
     >

@@ -28,8 +28,8 @@ const Home = () => {
     <MidSlide />
    
     <Footer />
-   
     </div>
+   
     
   )
 }
