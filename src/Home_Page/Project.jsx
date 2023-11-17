@@ -19,6 +19,8 @@ function Project() {
 
     return () => clearTimeout(timeout);
   }, [navigate]);
+
+  
   return (
     <div
       id="curtain"

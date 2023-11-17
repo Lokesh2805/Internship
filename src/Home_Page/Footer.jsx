@@ -5,7 +5,7 @@ function Footer() {
 
   return (
     <footer>
-        <div className=' bottom-5 p-8 flex justify-between mx-auto items-center bg-[#0F0F0F] mt-1 '>
+        <div className=' bottom-5 p-8 flex justify-between mx-auto items-center bg-black mt-1 '>
             <div >
                 <div className='text-white font-[-apple-system]'>Privacy Policy | t&c</div>
             </div>

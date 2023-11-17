@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import BlobAnimation from "./BlobAnimation";
+
 const MidSlide = () => {
   const textToDisplay = [
     "Software",
@@ -51,6 +52,7 @@ const MidSlide = () => {
   }, [displayText, isTyping, textToDisplay, currentTextIndex]);
 
   return (
+
     <div>
       <div className="flex">
         <div className="text-white p-8 text-[74px] font-[Poppins]">

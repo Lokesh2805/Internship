@@ -3,17 +3,17 @@ import Header from "../Home_Page/Header";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-function About() {
+function Contact() {
   const location = useLocation();
   const titleRef = useRef();
   const bodyBackgroundColor =
-    location.pathname === "/about" ? "bg-white" : "bg-1C1C1C";
+    location.pathname === "/contact" ? "bg-white" : "bg-1C1C1C";
   document.body.className = `bg ${bodyBackgroundColor}`;
   const navigate = useNavigate();
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      navigate("/about");
+      navigate("/contact");
     }, 2000);
 
     return () => clearTimeout(timeout);
@@ -26,10 +26,11 @@ function About() {
     <div className="fixed top-0 left-0 w-full h-screen bg-black z-10 animate-[curtain-drop_1s_ease_forwards] overflow-x-auto">
       <Header />
       <div className="text-white flex justify-center align-center font-[Poppins] font-bold text-[5rem] text-center">
-        Leveraging technology<br></br>
-        to craft the right <br></br>
-        story for you.
+        Let's Talk
+       
       </div>
+      <p>We’ve worked with clients of all sizes, from startups to enterprise brands. 
+        Let’s talk about your project and how we can help provide value.</p>
       <div className="flex justify-center align-center pt-[1.5vh] ">
         <button onClick={handleScroll}>
           <svg
@@ -100,4 +101,4 @@ function About() {
   );
 }
 
-export default About;
+export default Contact;

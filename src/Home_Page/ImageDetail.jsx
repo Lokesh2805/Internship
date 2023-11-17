@@ -1,9 +1,6 @@
 // ImageDetail.js
 import React from "react";
 import { useParams } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { images } from "../Constants/constants";
 const ImageDetail = () => {
   const { id } = useParams();
