@@ -29,9 +29,9 @@ function Contact() {
         Let's Talk
        
       </div>
-      <p>We’ve worked with clients of all sizes, from startups to enterprise brands. 
+      <p className="">We’ve worked with clients of all sizes, from startups to enterprise brands. 
         Let’s talk about your project and how we can help provide value.</p>
-      <div className="flex justify-center align-center pt-[1.5vh] ">
+      <div className="flex justify-center align-center pt-[1.5vh] pb-[6rem]">
         <button onClick={handleScroll}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
