@@ -7,6 +7,7 @@ import ImageDetail from './Home_Page/ImageDetail';
 import About from './About_page/About';
 import AnimatedCursor from 'react-animated-cursor';
 import Contact from './Contact_page/Contact';
+import TandcPage from './Contact_page/TandcPage';
 function App() {
   return (
     <div>
@@ -41,7 +42,7 @@ function App() {
         <Route path="/project/:id" element={<ImageDetail />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact/>}/>
-
+        <Route path='/tandc' element={<TandcPage/>}/>
       </Routes>
     </Router>
     </div>

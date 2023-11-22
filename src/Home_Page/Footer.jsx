@@ -7,7 +7,8 @@ function Footer() {
     <footer>
         <div className=' bottom-5 p-8 flex justify-between mx-auto items-center bg-black mt-1 '>
             <div >
-                <div className='text-white font-[-apple-system]'>Privacy Policy | t&c</div>
+                <div className='text-white font-[-apple-system]'>
+                <a href="/tandc" >Privacy Policy | t&c </a></div>
             </div>
             <div >
                 <div className='text-white font-[-apple-system]'>© Copyright Codevue Pvt Ltd {currentYear}</div>

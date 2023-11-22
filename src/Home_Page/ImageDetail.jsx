@@ -42,12 +42,12 @@ const ImageDetail = () => {
             Approach
           </a>
           <a
-            href="/next"
+            href="/project"
             className="text-white font-bold font-[Montserrat] relative flex group items-center "
           >
             {" "}
             <span className="hidden group-hover:flex h-3 w-3 bg-white rounded-full mr-2"></span>
-            Next
+            Close
           </a>
         </div>
         <div className="bg-white h-0.5 mt-5"></div>

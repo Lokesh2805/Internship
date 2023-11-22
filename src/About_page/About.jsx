@@ -56,46 +56,43 @@ function About() {
           Chat Bot
         </a>
       </div>
-      <div className="pl-[8rem] pr-[25rem] py-[4rem]">
-        <h1
-          ref={titleRef}
-          className="text-white font-bold text-[6rem] font-[Poppins] pb-[3rem]"
-        >
-          Who?
-        </h1>
-        <div className="pl-[2rem]">
-        <p className="text-white font-[Montserrat]">
-          we encourage the environment in our team to be genuine and open with
-          our clients, building a family-like environment that spawns optimistic
-          results through collaborative decision-making. It is easy to know when
-          someone is fibbing, and that only places more distance between us &
-          our clients, which we would never desire
-        </p>
-        <br></br>
-        <p className="text-white font-[Montserrat]">
-          we encourage the environment in our team to be genuine and open with
-          our clients, building a family-like environment that spawns optimistic
-          results through collaborative decision-making. It is easy to know when
-          someone is fibbing, and that only places more distance between us &
-          our clients, which we would never desire. .{" "}
-        </p>
-        <br></br>
-        <p className="text-white font-[Montserrat]">
-          we encourage the environment in our team to be genuine and open with
-          our clients, building a family-like environment that spawns optimistic
-          results through collaborative decision-making. It is easy to know when
-          someone is fibbing, and that only places more distance between us &
-          our clients, which we would never desire. .{" "}
-        </p>
-        <br></br>
-        <p className="text-white font-[Montserrat]">
-          we encourage the environment in our team to be genuine and open with
-          our clients, building a family-like environment that spawns optimistic
-          results through collaborative decision-making.
-        </p>
-        <br></br>
-        </div>
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pl-8 pr-8 md:pr-20 py-4 md:py-8 lg:pl-[10rem] lg:pt-48">
+  <h1
+    ref={titleRef}
+    className="text-white font-bold text-8xl font-[Poppins] col-span-full pb-6"
+  >
+    Who?
+  </h1>
+  <div className="col-span-full pl-[2.5rem] lg:pr-[24rem] md:pr-[0.5rem] md:col-span-2 lg:col-span-3">
+    <p className="text-white font-[Montserrat] mb-4">
+      we encourage the environment in our team to be genuine and open with
+      our clients, building a family-like environment that spawns optimistic
+      results through collaborative decision-making. It is easy to know when
+      someone is fibbing, and that only places more distance between us &
+      our clients, which we would never desire
+    </p>
+    <p className="text-white font-[Montserrat] mb-4">
+      we encourage the environment in our team to be genuine and open with
+      our clients, building a family-like environment that spawns optimistic
+      results through collaborative decision-making. It is easy to know when
+      someone is fibbing, and that only places more distance between us &
+      our clients, which we would never desire. .{" "}
+    </p>
+    <p className="text-white font-[Montserrat] mb-4">
+      we encourage the environment in our team to be genuine and open with
+      our clients, building a family-like environment that spawns optimistic
+      results through collaborative decision-making. It is easy to know when
+      someone is fibbing, and that only places more distance between us &
+      our clients, which we would never desire. .{" "}
+    </p>
+    <p className="text-white font-[Montserrat]">
+      we encourage the environment in our team to be genuine and open with
+      our clients, building a family-like environment that spawns optimistic
+      results through collaborative decision-making.
+    </p>
+  </div>
+</div>
+
     </div>
   );
 }

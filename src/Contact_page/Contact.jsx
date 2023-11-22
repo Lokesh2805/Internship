@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Header from "../Home_Page/Header";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -22,6 +22,14 @@ function Contact() {
   const handleScroll = () => {
     titleRef.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  const [currentDate, setCurrentDate] = useState('');
+
+  useEffect(() => {
+    const today = new Date();
+    const options = { day: 'numeric' ,month: 'numeric'};
+    setCurrentDate(today.toLocaleDateString('en-US', options));
+  }, []);
   return (
     <div className="fixed top-0 left-0 w-full h-screen bg-black z-10 animate-[curtain-drop_1s_ease_forwards] overflow-x-auto">
       <Header />
@@ -57,45 +65,15 @@ function Contact() {
           Chat Bot
         </a>
       </div>
-      <div className="pl-[8rem] pr-[25rem] py-[4rem]">
-        <h1
-          ref={titleRef}
-          className="text-white font-bold text-[6rem] font-[Poppins] pb-[3rem]"
-        >
-          Who?
-        </h1>
-        <div className="pl-[2rem]">
-        <p className="text-white font-[Montserrat]">
-          we encourage the environment in our team to be genuine and open with
-          our clients, building a family-like environment that spawns optimistic
-          results through collaborative decision-making. It is easy to know when
-          someone is fibbing, and that only places more distance between us &
-          our clients, which we would never desire
-        </p>
-        <br></br>
-        <p className="text-white font-[Montserrat]">
-          we encourage the environment in our team to be genuine and open with
-          our clients, building a family-like environment that spawns optimistic
-          results through collaborative decision-making. It is easy to know when
-          someone is fibbing, and that only places more distance between us &
-          our clients, which we would never desire. .{" "}
-        </p>
-        <br></br>
-        <p className="text-white font-[Montserrat]">
-          we encourage the environment in our team to be genuine and open with
-          our clients, building a family-like environment that spawns optimistic
-          results through collaborative decision-making. It is easy to know when
-          someone is fibbing, and that only places more distance between us &
-          our clients, which we would never desire. .{" "}
-        </p>
-        <br></br>
-        <p className="text-white font-[Montserrat]">
-          we encourage the environment in our team to be genuine and open with
-          our clients, building a family-like environment that spawns optimistic
-          results through collaborative decision-making.
-        </p>
-        <br></br>
-        </div>
+      <div ref={titleRef} className="flex justify-center content-center items-center pt-32 pb-32">
+      <div className="bg-white flex lg:h-[30rem] lg:w-[70rem] md:h-[15rem] md:w-[35rem] sm:h-[7.5rem] sm:w-[17.5rem]  h-[10rem] w-[20rem]">
+        <a className="pt-16 pl-20 text-[2rem]">&larr; </a>
+        <p className="text-[#d3d3d3] text-[2rem] px-10 py-16">{currentDate}</p>
+      </div>
+      <div>
+        
+      </div>
+
       </div>
     </div>
   );
