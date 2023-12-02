@@ -30,19 +30,17 @@ function Project() {
         <Header />
       </div>
 
-      <div className="flex items-center justify-center gap-20 whitespace-nowrap ml-[35rem]">
+      <div className=" gap-20 whitespace-nowrap ml-[35rem] grid grid-cols-[minmax(40vh,_300vh)_minmax(40vh,_1fr)_minmax(40vh,_1fr)_minmax(40vh,_1fr)_minmax(40vh,_1fr)_850px]">
         {images.map((image, index) => (
           <div key={index} className="relative">
             <Link to={`/project/${index + 1}`}>
               <img
                 src={image.url}
                 alt={`Image ${index + 1}`}
-                className="relative  inline-block mx-4  h-[25.48rem] w-[19.76rem] opacity-100 object-cover mt-[7rem] animate-[movebounce_5s_linear_infinite] rounded-lg filter grayscale hover:filter-none transition-transform duration-300 sm:flex-col"
+                className="relative   inline-block mx-4  h-[25.48rem] w-[19.76rem] opacity-100 object-cover mt-[7rem] animate-[movebounce_5s_linear_infinite] rounded-lg filter grayscale hover:filter-none transition-transform duration-300 sm:flex-col"
               />
             </Link>
-            <figcaption className="text-white text-center mt-4 animate-[movebounce_5s_linear_infinite]">
-              {index + 1}
-            </figcaption>
+           
           </div>
         ))}
       </div>

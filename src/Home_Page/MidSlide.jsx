@@ -10,47 +10,41 @@ const MidSlide = () => {
     "Blockchain",
     "Wearable",
   ];
-  const typingSpeed = 180;
+  const TYPING_SPEED = 180;
   const eraseSpeed = 50;
-  const delay = 1000;
-
   const [displayText, setDisplayText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
-  useEffect(() => {
-    let timeout;
-    if (isTyping) {
-      const currentText = textToDisplay[currentTextIndex];
-      const currentTextLength = displayText.length;
-      if (currentTextLength < currentText.length) {
-        timeout = setTimeout(() => {
-          setDisplayText(currentText.slice(0, currentTextLength + 1));
-        }, typingSpeed);
-      } else {
-        setIsTyping(false);
-        timeout = setTimeout(() => {
-          setIsTyping(true);
-          setCurrentTextIndex((currentTextIndex + 1) % textToDisplay.length);
-          setDisplayText("");
-        }, delay);
-      }
-    } else {
-      const currentText = textToDisplay[currentTextIndex];
-      const currentTextLength = displayText.length;
-      if (currentTextLength > 0) {
-        timeout = setTimeout(() => {
-          setDisplayText(currentText.slice(0, currentTextLength - 1));
-        }, eraseSpeed);
-      } else {
-        setIsTyping(true);
-        timeout = setTimeout(() => {
-          setIsTyping(false);
-        }, delay);
-      }
-    }
-  }, [displayText, isTyping, textToDisplay, currentTextIndex]);
+  const [typingSpeed, setTypingSpeed] = useState(TYPING_SPEED);
 
+  useEffect(() => {
+    const handleType = () => {
+        const i = currentTextIndex % textToDisplay.length;
+        const fullText = textToDisplay[i];
+
+        setDisplayText((prevText) => {
+            if (isTyping) {
+                return fullText.substring(0, prevText.length - 1);
+            } else {
+                return fullText.substring(0, prevText.length + 1);
+            }
+        });
+
+        setTypingSpeed(isTyping ? eraseSpeed : TYPING_SPEED);
+
+        if (!isTyping && displayText === fullText) {
+            setTimeout(() => setIsTyping(true), 500);
+        } else if (isTyping && displayText === "") {
+            setIsTyping(false);
+            setCurrentTextIndex(currentTextIndex + 1);
+        }
+    };
+
+    const typingTimer = setTimeout(handleType, typingSpeed);
+
+    return () => clearTimeout(typingTimer);
+}, [textToDisplay, displayText, isTyping, currentTextIndex, typingSpeed])
   return (
 
     <div>
@@ -77,3 +71,6 @@ const MidSlide = () => {
 };
 
 export default MidSlide;
+
+
+
