@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
 overflow: hidden;
   margin: 0;

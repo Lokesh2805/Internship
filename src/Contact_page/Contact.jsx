@@ -37,7 +37,7 @@ function Contact() {
         Let's Talk
        
       </div>
-      <p className="">We’ve worked with clients of all sizes, from startups to enterprise brands. 
+      <p className="text-[#FFF] text-center font-[Poppins] text-[37px] not-italic font-semibold leading-[71px]">We’ve worked with clients of all sizes, from startups to enterprise brands. 
         Let’s talk about your project and how we can help provide value.</p>
       <div className="flex justify-center align-center pt-[1.5vh] pb-[6rem]">
         <button onClick={handleScroll}>
