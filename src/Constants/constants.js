@@ -8,3 +8,33 @@ export const images = [
 
   ];
   
+
+  export const feedback = [
+    {
+      id: "feedback-1",
+      content:
+        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      name: "James Weber CTO @Greenswitch",
+    },
+    {
+      id: "feedback-2",
+      content:
+        "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      name: "Steve Mark",
+    },
+    {
+      id: "feedback-3",
+      content:
+        "It is usually people in the money business, finance, and international trade that are really rich.",
+      name: "Kenn Gallagher",
+    },
+  ];
+
+  export const sections = [
+    { text: 'Research', to: '/research' },
+    { text: 'Strategy', to: '/strategy' },
+    { text: 'Design', to: '/design' },
+    { text: 'Engineer', to: '/engineer' },
+    { text: 'Launch', to: '/launch' },
+    { text: 'Growth', to: '/growth' },
+  ];

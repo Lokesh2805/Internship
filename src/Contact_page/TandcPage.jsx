@@ -21,6 +21,9 @@ function TandcPage() {
   return (
     <div className="fixed top-0 left-0 w-full h-screen bg-black z-10 animate-[curtain-drop_1s_ease_forwards] overflow-x-auto">
     <Header/>
+    <div className="flex justify-center items-center text-white font-[Inter] text-[7rem] not-italic ">
+    <h1>Privacy Policy</h1>
+    </div>
     </div>
   )
 }

@@ -67,9 +67,10 @@ function Contact() {
       </div>
       <div ref={titleRef} className="flex justify-center content-center items-center pt-32 pb-32">
       <div className="bg-white flex lg:h-[30rem] lg:w-[70rem] md:h-[15rem] md:w-[35rem] sm:h-[7.5rem] sm:w-[17.5rem]  h-[10rem] w-[20rem]">
-        <a className="pt-16 pl-20 text-[2rem]">&larr; </a>
+        <a href="/home" className="pt-16 pl-20 text-[2rem]">&larr; </a>
         <p className="text-[#d3d3d3] text-[2rem] px-10 py-16">{currentDate}</p>
       </div>
+      <form></form>
       <div>
         
       </div>
