@@ -17,11 +17,12 @@ function Section3() {
   const chunkedSections = chunkArray(sections, 3);
 
   return (
+    
     <div className='flex flex-col gap-3'>
       {chunkedSections.map((row, rowIndex) => (
         <div key={rowIndex} className="flex flex-row gap-3">
           {row.map((section, index) => (
-            <CardComponent key={index} text={section.text} to={section.to} />
+            <CardComponent key={index} text={section.text} to={`/services/${section.to}`} />
           ))}
         </div>
       ))}

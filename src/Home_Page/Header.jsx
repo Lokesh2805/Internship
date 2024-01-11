@@ -3,11 +3,12 @@ import React from "react";
 function Header() {
   return (
     <div class="bg-black p-4 sticky top-[0]">
-      <div class="container mx-auto flex items-center justify-between">
-        <div class="bg-white rounded-full h-12 w-12 flex items-center justify-center">
+      <div class="container mx-auto flex items-center justify-between" >
+      <form action="/home">
+        <button class="bg-white rounded-full h-12 w-12 flex items-center justify-center">
           <img src="your-logo.png" alt="Logo" class="h-8 w-8" />
-        </div>
-
+        </button>
+        </form>
         <nav class="pl-[1.2rem] space-x-4">
           <a
             href="/about"

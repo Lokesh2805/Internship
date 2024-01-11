@@ -31,10 +31,10 @@ export const images = [
   ];
 
   export const sections = [
-    { text: 'Research', to: '/research' },
-    { text: 'Strategy', to: '/strategy' },
-    { text: 'Design', to: '/design' },
-    { text: 'Engineer', to: '/engineer' },
-    { text: 'Launch', to: '/launch' },
-    { text: 'Growth', to: '/growth' },
+    { text: 'Research', to: 'research' },
+    { text: 'Strategy', to: 'strategy' },
+    { text: 'Design', to: 'design' },
+    { text: 'Engineer', to: 'engineer' },
+    { text: 'Launch', to: 'launch' },
+    { text: 'Growth', to: 'growth' },
   ];
