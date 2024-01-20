@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CardComponent from './Card';
 import { sections } from '../Constants/constants';
+
 function Section3() {
-  
+
 
   // Function to chunk the array into groups of size 'size'
   const chunkArray = (array, size) => {
@@ -20,9 +21,9 @@ function Section3() {
     
     <div className='flex flex-col gap-3'>
       {chunkedSections.map((row, rowIndex) => (
-        <div key={rowIndex} className="flex flex-row gap-3">
+        <div key={rowIndex} className="flex flex-row gap-3 ">
           {row.map((section, index) => (
-            <CardComponent key={index} text={section.text} to={`/services/${section.to}`} />
+            <CardComponent key={index} text={section.text} to={`/services/${section.to}`}  />
           ))}
         </div>
       ))}

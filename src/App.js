@@ -16,6 +16,7 @@ import Design from './About_page/services/Design';
 import Engineer from './About_page/services/Engineer';
 import Launch from './About_page/services/Launch';
 import Growth from './About_page/services/Growth';
+import Modal from './About_page/Modal';
 function App() {
   return (
     <div>
@@ -57,7 +58,7 @@ function App() {
         <Route path='/services/engineer' element={<Engineer/>}/>
         <Route path='/services/launch' element={<Launch/>}/>
         <Route path='/services/growth' element={<Growth/>}/>
-
+        <Route path='/modal' element={<Modal/>}/>
       </Routes>
     </Router>
     </div>
